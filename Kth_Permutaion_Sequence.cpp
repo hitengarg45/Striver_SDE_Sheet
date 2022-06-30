@@ -1,3 +1,10 @@
+//* https://takeuforward.org/data-structure/find-k-th-permutation-sequence/
+//* Example 1:
+
+//* Input: N = 3, K = 3
+ 
+//* Output: “213”
+
 #include<bits/stdc++.h>
 using namespace std;
 
