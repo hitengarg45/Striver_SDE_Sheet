@@ -24,6 +24,13 @@ using namespace std;
 //? In Normal Recursion it will go till the end no matter what, and there it decides if it is a valid solution or not
 //? TC - O(N! * N)
 
+//? Optimization: Instead of traversing and checking if the col or diagonals have the queen or not
+//? Use Hasmaps -> One for marking the column
+//? 1 for left diagonal and 1 for right diagonal
+//? create 2 visited arrays of size 2 * n + 1
+//? for left diagonals, idx = (n - 1) - (row - col)
+//? for right diagonals, idx = row + col
+
 bool isSafe(vector<string> &ds, int i, int j, int n){
     for(int x = 0; x <= i; x++){
         if(ds[x][j] == 'Q') return false;
